@@ -28,4 +28,5 @@ introvideo.addEventListener("ended", (event) => {
   console.log(
     "Video stopped either because it has finished playing or no further data is available.",
   );
+  window.location.replace("../landing/landing.html");
 });
