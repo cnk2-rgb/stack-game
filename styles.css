@@ -2,27 +2,32 @@ html {
     background-color:black;
 }
 
-#intro-video {
+video {
     position: fixed;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    animation: fade 5s ease-out 0s forwards;
-}
-
-#landing-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    /* animation: fade 5s ease-out 0s forwards; */
     z-index: -1;
 }
  body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     height:100vh;
     width:100vw;
     text-align: center;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .content {

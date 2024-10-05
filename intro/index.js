@@ -17,14 +17,14 @@ if (fade.style.opacity > 0) {
   
 else { 
     clearInterval(intervalID); 
-    window.location.replace("landing.html");
+    window.location.replace("../landing/landing.html");
 } 
   
     }, 200); 
 };
 
 introvideo.addEventListener("ended", (event) => {
-  fadeout(); //may not be necessary
+  //fadeout(); //may not be necessary
   console.log(
     "Video stopped either because it has finished playing or no further data is available.",
   );
