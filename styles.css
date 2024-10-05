@@ -9,14 +9,15 @@ video {
     width: 100%;
     height: 100%;
     /* animation: fade 5s ease-out 0s forwards; */
-    z-index: -1;
+    z-index: -5;
 }
- body {
+
+body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    height:100vh;
-    width:100vw;
+    /* height:100vh;
+    width:100vw; */
     text-align: center;
 }
 
@@ -30,10 +31,6 @@ video {
     }
 }
 
-.content {
-    padding-top:40vh;
-    /* background-color: red; */
-}
 h1 {
     color: antiquewhite;
 }
@@ -50,6 +47,13 @@ button {
     font-family: 'Franklin Gothic Medium';
 }
 
+/* Intro  */
+.content {
+    padding-top:40vh;
+    /* background-color: red; */
+}
+
+/* Landing */
 .bg {
     position: fixed;
     right: 0;
@@ -57,5 +61,30 @@ button {
     width: 100%;
     height: 100%;
     /* animation: fade 5s ease-out 0s forwards; */
-    z-index: -1;
+    z-index: -5;
+}
+
+/* Coffeeshop */
+/* .squares{
+    
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    width: 10%;
+    height: 10%;
+    background-color: red; 
+} */
+
+#square-container {
+    position: absolute;
+    color: red; 
+    
+}
+
+.square {
+    position: absolute; /* Allows overlapping */
+    top: 0; /* You can adjust this to control vertical position */
+    left: 0; /* Adjust this for horizontal position */
+    width: 100vw;
+    height: 100vh;
 }
