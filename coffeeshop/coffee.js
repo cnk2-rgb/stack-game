@@ -11,9 +11,9 @@ document.addEventListener('keydown', function(event) {
     }
   });
 
-squares.forEach(square => {
-  square.style.display = "none";
-});
+// squares.forEach(square => {
+//   square.style.display = "none";
+// });
 
 cont.style.display = "none";
 
