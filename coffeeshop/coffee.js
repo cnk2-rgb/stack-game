@@ -1,8 +1,12 @@
 const coffeevideo = document.querySelector("#coffee-video");
 const squares = document.querySelectorAll(".square");
-// squares.forEach(square => {
-//   square.style.display = "none";
-// });
+const cont = document.querySelector("#continue");
+
+squares.forEach(square => {
+  square.style.display = "none";
+});
+
+cont.style.display = "none";
 
 const determinedvideo = document.querySelector("#determined-video");
 
@@ -22,8 +26,13 @@ coffeevideo.addEventListener("ended", (event) => {
     squares.forEach(square => {
         square.style.display = "block";
     });
+    cont.style.display = "block";
 
   });
+
+cont.addEventListener("click", (event) => {
+    window.location.replace("../nebula/nebula.html");
+});
 
 
 
