@@ -13,6 +13,7 @@ document.addEventListener('keydown', function(event) {
       closevid.style.display = "none";
       jumpvid.style.display = "block";
       rocketaudio.play();
+      jumpvid.play();
     }
   });
 
