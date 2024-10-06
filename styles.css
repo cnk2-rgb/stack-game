@@ -87,20 +87,26 @@ button {
     align-self: center;
     margin-left: auto;
     margin-right: auto;
-    display: block
+    /* display: block */
 }
 
 video {
     position: fixed; 
     height: 100%;
     /* animation: fade 5s ease-out 0s forwards; */
-    z-index: -5;
 
     display: block;
     align-self: center;
+    z-index: -10;
 }
 
 #vid-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hid-wrapper {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
