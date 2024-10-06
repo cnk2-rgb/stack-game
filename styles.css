@@ -9,8 +9,8 @@ body {
 
     height:100vh;
     width:100vw;
-    /* text-align: center;
-    align-items: center; */
+    text-align: center;
+    align-items: center;
     /* position: relative; */
 
     /* display: block; */
@@ -104,7 +104,7 @@ video {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    height: 100vw;
+    /* height: 100vw; */
 }
 
 #hid-wrapper {
@@ -117,4 +117,11 @@ video {
     top: 20%;
     left: 30%;
     position: fixed;
+}
+
+#mid-wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+  
 }
