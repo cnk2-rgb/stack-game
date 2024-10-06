@@ -2,23 +2,18 @@ html {
     background-color:black;
 }
 
-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    /* animation: fade 5s ease-out 0s forwards; */
-    z-index: -5;
-}
-
 body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    /* height:100vh;
-    width:100vw; */
-    text-align: center;
+
+    height:100vw;
+    width:100vh;
+    /* text-align: center;
+    align-items: center; */
+    /* position: relative; */
+
+    /* display: block; */
 }
 
 @keyframes fadeInAnimation {
@@ -45,6 +40,8 @@ button {
     display: inline-block;
     font-size: 16px;
     font-family: 'Franklin Gothic Medium';
+    width:fit-content;
+    height:fit-content;
 }
 
 /* Intro  */
@@ -60,6 +57,8 @@ button {
     bottom: 0;
     width: 100%;
     height: 100%;
+    top: 0; /* You can adjust this to control vertical position */
+    left: 0; /* Adjust this for horizontal position */
     /* animation: fade 5s ease-out 0s forwards; */
     z-index: -5;
 }
@@ -75,16 +74,30 @@ button {
     background-color: red; 
 } */
 
-#square-container {
-    position: absolute;
-    color: red; 
-    
-}
+/* #square-container {
+    position: relative;
+    width: auto;
+    height: 100%;
+} */
 
 .square {
-    position: absolute; /* Allows overlapping */
-    top: 0; /* You can adjust this to control vertical position */
-    left: 0; /* Adjust this for horizontal position */
-    width: 100vw;
+    position: fixed; /* Allows overlapping */
+    width: auto;
     height: 100vh;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
+video {
+    position: fixed;
+    width: auto;
+    height: 100%;
+    /* animation: fade 5s ease-out 0s forwards; */
+    z-index: -5;
+
+    display: block;
+    margin-left: 12.5%;
+    /* margin-right: auto; */
 }
