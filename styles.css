@@ -97,8 +97,20 @@ video {
 }
 
 #leftclick {
-    top: 20%;
-    left: 30%;
+    top: 50%;
+    left: 38%;
+    position: fixed;
+}
+
+#centerclick {
+    top: 50%;
+    left: 60%;
+    position: fixed;
+}
+
+#rightclick {
+    top: 50%;
+    left: 80%;
     position: fixed;
 }
 
