@@ -1,27 +1,17 @@
 
 const introvideo = document.querySelector("#intro-video");
+const startbg = document.querySelector("#start-bg");
+const introaudio = document.querySelector("#intro-audio");
 
-function fadeout() { 
-    var fade= document.getElementById("intro-video"); 
-      
-    var intervalID = setInterval(function () { 
-  
-if (!fade.style.opacity) { 
-    fade.style.opacity = 1; 
-} 
-  
-  
-if (fade.style.opacity > 0) { 
-    fade.style.opacity -= 0.2; 
-} 
-  
-else { 
-    clearInterval(intervalID); 
-    window.location.replace("../landing/landing.html");
-} 
-  
-    }, 200); 
-};
+document.addEventListener('keydown', function(event) {
+    if (event.key === ' ') {
+      // Code to execute when the spacebar is pressed
+      console.log('Spacebar pressed!'); 
+      startbg.style.display = "none";
+      introvideo.play();
+      introaudio.play();
+    }
+  });
 
 introvideo.addEventListener("ended", (event) => {
   //fadeout(); //may not be necessary
