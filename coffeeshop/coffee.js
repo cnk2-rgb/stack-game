@@ -1,6 +1,15 @@
 const coffeevideo = document.querySelector("#coffee-video");
 const squares = document.querySelectorAll(".square");
 const cont = document.querySelector("#continue");
+const wonkyaudio = document.querySelector("#wonky-audio");
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === ' ') {
+      // Code to execute when the spacebar is pressed
+      console.log('Spacebar pressed!'); 
+      wonkyaudio.play();
+    }
+  });
 
 squares.forEach(square => {
   square.style.display = "none";
@@ -31,7 +40,7 @@ coffeevideo.addEventListener("ended", (event) => {
   });
 
 cont.addEventListener("click", (event) => {
-    window.location.replace("../nebula/nebula.html");
+    window.location.replace("../cut-scene/rocket.html");
 });
 
 

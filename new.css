@@ -1,0 +1,17 @@
+video {
+    position: fixed;
+    height: 100%;
+    width: auto;
+
+    display: block;
+    /* margin-left: auto;
+    margin-right: auto; */
+    align-self: center;
+    padding-left: 10%;
+}
+
+body {
+    margin: 0;
+    align-items: center;
+    background-color: black;
+}
