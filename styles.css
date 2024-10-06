@@ -1,16 +1,14 @@
-html {
+html, body {
     background-color:black;
-}
-
-body {
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
+    margin: 0;
     height:100vh;
     width:100vw;
-    text-align: center;
-    align-items: center;
+    /* text-align: center;
+    align-items: center; */
     /* position: relative; */
 
     /* display: block; */
@@ -64,21 +62,6 @@ button {
 }
 
 /* Coffeeshop */
-/* .squares{
-    
-    display: inline-block;
-    right: 0;
-    bottom: 0;
-    width: 10%;
-    height: 10%;
-    background-color: red; 
-} */
-
-/* #square-container {
-    position: relative;
-    width: auto;
-    height: 100%;
-} */
 
 .square {
     position: fixed; /* Allows overlapping */
@@ -120,8 +103,12 @@ video {
 }
 
 #mid-wrapper {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; 
-  
+    min-width: 100vw;
+    min-height: 100vh;
+    /* margin-left: auto;
+    margin-right: auto;  */
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display:block;
 }
